@@ -1,0 +1,153 @@
+*{box-sizing: border-box;
+    font-family: 'Akshar', sans-serif;
+
+}
+.heading, h1 {
+    text-align: center;
+}
+h1 {
+    background-color: darkslategrey;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 1.25em;
+    margin: auto;
+    padding: 10px 0;
+}
+h2 {
+    font-size: 1.40em;
+}
+.heading {
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+form {
+    border-top: 2px  solid black;
+}
+fieldset {
+    border: none;
+    text-align: left;
+    padding-left: 0;
+}
+legend {
+font-weight: 800;
+margin: auto;
+padding: 25px 0 10px;
+width: 100%;
+}
+.inputdiv {
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 0;
+}
+.zipcode {
+    width: 50%;
+}
+.inputdiv label {
+    margin: 7px 0;
+}
+input::placeholder {
+    text-align: right;
+}
+input, select {
+    border: 10px none;
+    border-radius: 5px;
+    background-color: rgb(236, 231, 231);
+    padding: 12px;
+    }
+.contact {
+    padding-right: 0;
+}
+input:focus {
+    text-align: left;
+    background-color: rgb(150, 144, 144);
+}
+.contact input:focus,
+select:focus,
+textarea:focus {
+  font-size: 2em;
+  color: darkblue;
+  transition-property: background-color, font-size, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  width: 75%;
+}
+.inputdiv input:hover, select:hover, textarea:hover {
+border: 1px solid blue;
+}
+.inputdiv2 {
+    margin: 5px 0;
+    padding: 5px 0;
+}
+.inputdiv2 label {
+    margin-left: 10px;
+}
+p {
+    margin: 17px 0 10px;
+}
+textarea {
+    padding: 10px 40px 40px 10px;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(236, 231, 231);
+    border: none;
+    resize: none;
+}
+button[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.25em;
+    padding: 8px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(80, 196, 157);
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+label[for="comment"] {
+    margin-left: 0;
+}
+.extra {
+    background-color: blanchedalmond;
+    border-bottom: 2px solid black;
+}
+footer {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+ .heading {
+     font-size: 20px;
+ }
+ .contact {
+     margin-right: 0;
+     padding-right: 0;
+ }
+.inputdiv {
+align-items: center;
+display: flex;
+flex-direction: row;
+margin: 25px 0;
+}
+.inputdiv input,
+.inputdiv select {
+    width: 75%;
+}
+label {
+    width: 25%;
+}
+.name {
+    margin-top: 5px;
+}
+input[class="zipcode"] {
+width: 25%;
+}
+}
